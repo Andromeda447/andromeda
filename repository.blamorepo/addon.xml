@@ -4,9 +4,9 @@
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="[COLOR red]Blamo Repo[/COLOR]">
-            <info compressed="false">https://raw.githubusercontent.com/Andromeda447/andromeda/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Andromeda447/andromeda/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Andromeda447/andromeda/master/zips/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/andromeda447/andromeda/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/andromeda447/andromeda/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/andromeda447/andromeda/master/zips/</datadir>
             <hashes>false</hashes>
             <dir>
                 <info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
