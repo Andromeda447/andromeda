@@ -181,6 +181,45 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.neptune" version="1.4.0" name=" Neptune Rising" provider-name="MrBlamo">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.neptune.artwork" />
+		<import addon="script.neptune.metadata" />
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.metahandler"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.beautifulsoup"/>
+		<import addon="script.module.schism.common"/>
+		<import addon="script.module.futures"/>
+		<import addon="script.module.universalscrapers" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="neptune.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Neptune Rising</summary>
+		<description lang="en">Movie, TV Show, and Playlist Add-on</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
+		<platform>all</platform>
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
 <addon
   id="plugin.video.SportsDevil"
   version="2018.04.11"
@@ -241,14 +280,14 @@
     </extension>
 </addon>
 
-    <addon id="repository.blamorepo" name="[COLOR red]Blamo Repo Reborn[/COLOR]" version="1.2.1" provider-name="[COLOR red]Mr.Blamo[/COLOR]">
+    <addon id="repository.blamorepo" name="[COLOR red]Blamo Repo Reborn[/COLOR]" version="1.2.2" provider-name="[COLOR red]Mr.Blamo[/COLOR]">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="[COLOR red]Blamo Repo[/COLOR]">
-            <info compressed="false">https://raw.githubusercontent.com/andromeda447/andromeda/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/andromeda447/andromeda/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/andromeda447/andromeda/master/zips/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/andromeda420/andromeda420/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/andromeda420/andromeda420/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/andromeda420/andromeda420/master/zips/</datadir>
             <hashes>false</hashes>
             <dir>
                 <info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
@@ -264,6 +303,11 @@
                 <info>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/addons.xml</info>
                 <checksum>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/addons.xml.md5</checksum>
                 <datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/</datadir>
+            </dir>
+            <dir>
+                <info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
             </dir>
             <dir>
                 <info compressed="false">https://repo.orionoid.com/addons.xml?v=3.3.0</info>
@@ -539,6 +583,37 @@
             <license>GPL v3</license>
             <source>https://</source>
         </extension>
+</addon>
+
+<addon id="script.neptune.artwork" version="1.1.3" name="Neptune Rising Artwork" provider-name="MrBlamo">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Neptune Rising Addon</summary>
+		<description>Themes for Neptune Rising are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<license>Beerware rev. 42</license>
+	</extension>
+</addon>
+
+<addon id="script.neptune.metadata" version="1.0.5" name="Neptune Rising Metadata" provider-name="MrBlamo">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Neptune Rising Addon</summary>
+		<description>Metadata for Neptune Rising are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+	</extension>
 </addon>
 
 	<addon id="script.skin.helper.colorpicker" name="Skin Helper Service ColorPicker" version="1.0.14" provider-name="marcelveldt,sualfred">
